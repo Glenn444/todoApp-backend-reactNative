@@ -8,7 +8,7 @@ const createTask = async(req, res)=>{
 
 const findAllTasks = async(req, res)=>{
     const alltasks = await Task.find({});
-    res.status(200).json({tasks:alltasks});
+    res.status(200).json({alltasks});
 }
 
 
